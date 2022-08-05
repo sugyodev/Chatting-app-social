@@ -1,0 +1,153 @@
+.bg-green {
+    background: #44bb79 !important;
+}
+.customGrey {
+    background: #3d415b !important;
+}
+.customGrey:hover {
+    background: #303349 !important;
+}
+.white {
+    color: #fff;
+}
+.colorGray {
+    color: #303349 !important;
+}
+.colorRed {
+    color: #dc3545 !important;
+}
+.loginForm input {
+    background: #e7f0fe;
+    color: #303349 !important;
+}
+.sidebar::-webkit-scrollbar {
+    width: 0px;
+}
+.sidebar {
+    background: #44bb79 !important
+}
+.sideLogo p {
+    position: relative;
+    left: -32px;
+}
+.customGrey:hover::after {
+    background: #44bb79 !important
+}
+.sidebar a.customGrey.active:hover::after {
+    background: #44bb79 !important
+}
+.sidebar a {
+    background: #303349 !important;
+    border-radius: unset;
+    width: 100%;
+    margin: unset;
+}
+.sidebar a.customGrey.active {
+    background: #44bb79 !important;
+}
+.navbar {
+    background: #44bb79 !important;
+    box-shadow: 0px 5px 10px hsl(0deg 0% 13%) !important;
+}
+
+.theme-tbl {
+    width: 90% !important;
+    box-shadow: 0px 5px 20px 0px hsl(0deg 0% 13%) !important;
+}
+.theme-tbl thead tr, .theme-tbl tbody tr {
+    background: #303349;
+}
+.compose-form {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.compose-form input {
+    width: 100% !important;
+}
+.compose-form textarea {
+    width: 90%;
+}
+.sidebar .sideLogo {
+    background: #3d415b !important;
+    min-height: 80px !important;
+}
+.customAlert {
+    background: #fff !important;
+    box-shadow: 0px 0px 20px hsl(0deg 0% 13%) !important;
+    border-radius: 4px;
+    padding: 0 15px !important;
+}
+.customAlert p {
+    color: #000 !important;
+}
+.formContent {
+    background-color: #f8f8f8 !important;
+    justify-content: center !important;
+    margin: auto !important;
+}
+.formContent .loginForm {
+    width: 400px;
+}
+.formContent .loginForm h1, .formContent .loginForm form {
+    width: 100%;
+}
+.formContent .loginForm h1 {
+    background-color: #303349;
+    color: #72737a !important;
+    padding: 20px 35px;
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: unset;
+    text-transform: uppercase;
+}
+.formContent .loginForm form {
+    width: 100%;
+    box-shadow: 0 0 5px #00000038;
+    padding: 30px;
+}
+.formContent .loginForm input {
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    border-radius: unset;
+    color: #ccc !important;
+    padding-left: 5px;
+}
+
+.formContent .loginForm input:focus {
+   
+    color: rgb(0, 0, 0) !important;
+}
+
+.btn-submit {
+    width: 100%;
+    text-align: center;
+}
+.btn-submit button {
+    border-radius: unset;
+    width: 90%;
+    background-color: #44bbb0 !important;
+}
+.para-acc {
+    justify-content: center !important;
+    margin-top: 10px;
+}
+.btn-submit p {
+    font-size: 12px;
+    color: #000;
+}
+.fontsizeAdj{
+    font-size: 14px !important;
+}
+.chat-table {
+    margin: 15px;
+    width: 90% !important;
+}
+
+.chat-table thead th {
+    font-weight: bold;
+}
+
+svg {
+    font-size: 1.5rem;
+}
