@@ -21,7 +21,7 @@ export default function Compose() {
 
     const {recipient, title, body} = formData
 
-    // const changeFormData = e => setFormData({...formData, [e.target.name]: e.target.value})
+    const changeFormData = e => setFormData({...formData, [e.target.name]: e.target.value})
 
     const auth = useSelector(state => state.auth)
     const sendMessage = e => {
@@ -64,13 +64,13 @@ export default function Compose() {
                                        value={title}
                                        fullWidth
                             />
-                        </Grid>
-                        <Grid item xs={6}>
-                            <TextField label="Email" placeholder="Email" name="recipient" variant="outlined"
-                                       onChange={changeFormData}
-                                       value={recipient}
-                                       fullWidth/>
-                        </Grid>
+                        // </Grid>
+                        // <Grid item xs={6}>
+                        //     <TextField label="Email" placeholder="Email" name="recipient" variant="outlined"
+                        //                onChange={changeFormData}
+                        //                value={recipient}
+                        //                fullWidth/>
+                        // </Grid>
                         <Grid item xs={12}>
                             <TextField
                                 label="Your Body"
