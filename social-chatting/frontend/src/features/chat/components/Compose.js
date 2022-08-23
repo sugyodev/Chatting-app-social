@@ -21,20 +21,20 @@ export default function Compose() {
 
     const {recipient, title, body} = formData
 
-    const changeFormData = e => setFormData({...formData, [e.target.name]: e.target.value})
+    // const changeFormData = e => setFormData({...formData, [e.target.name]: e.target.value})
 
     const auth = useSelector(state => state.auth)
     const sendMessage = e => {
         e.preventDefault();
-        // dispatch(showLoader());
+        dispatch(showLoader());
 
-        // const config = {
-        //     headers: {
-        //         'Content-Type': 'application/json',
-        //         'Accept': 'application/json',
-        //         'Authorization': `JWT ${localStorage.getItem('access')}`,
-        //     }
-        // };
+        const config = {
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
+                'Authorization': `JWT ${localStorage.getItem('access')}`,
+            }
+        };
         const user = auth.user.email;
         const data = JSON.stringify({user, recipient, title, body});
         axios.post(`${REACT_APP_API_URL}/api/chats/`, data, config)
