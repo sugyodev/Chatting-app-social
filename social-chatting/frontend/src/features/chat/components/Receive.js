@@ -4,7 +4,7 @@ import REACT_APP_API_URL from '../../../testurl'
 import axios from 'axios'
 import { useSelector } from 'react-redux'
 
-export default function Receive() {
+// export default function Receive() {
     const [tableData, setTableData] = useState([])
     const reload = useSelector(state => state.reload)
 
