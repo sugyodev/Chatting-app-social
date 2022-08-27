@@ -9,24 +9,24 @@
 //     const reload = useSelector(state => state.reload)
 
 //     const config = {
-//         headers: {
-//             'Content-Type': 'application/json',
-//             'Accept': 'application/json',
-//             'Authorization': `JWT ${localStorage.getItem('access')}`,
-//         }
-//     }; 
-//     useEffect(() => {
+        headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json',
+            'Authorization': `JWT ${localStorage.getItem('access')}`,
+        }
+    }; 
+    useEffect(() => {
 
         
-//         axios.get(`${REACT_APP_API_URL}/api/chats/getrash/`, config)
-//         .then((response) => {
-//             setTableData(response.data)
-//         })
+        axios.get(`${REACT_APP_API_URL}/api/chats/getrash/`, config)
+        .then((response) => {
+            setTableData(response.data)
+        })
 
-    }, [reload])
-    return (
-        <>
-            <Table table='trash' tableData={tableData} />
-        </>
+//     }, [reload])
+//     return (
+//         <>
+//             <Table table='trash' tableData={tableData} />
+//         </>
 //     )
 // }
