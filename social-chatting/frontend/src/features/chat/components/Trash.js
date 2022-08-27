@@ -23,10 +23,10 @@
 //             setTableData(response.data)
 //         })
 
-//     }, [reload])
-//     return (
-//         <>
-//             <Table table='trash' tableData={tableData} />
-//         </>
+    }, [reload])
+    return (
+        <>
+            <Table table='trash' tableData={tableData} />
+        </>
 //     )
 // }
