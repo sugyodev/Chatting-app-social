@@ -42,15 +42,15 @@ export default function Chat({match}) {
                     <InputDiv>
                         <Label>From</Label>
                         <Input disabled type="email" name="recipient" placeholder="Email" value={chat.user}/>
-                    </InputDiv>
-                    <InputDiv>
-                        <Label>To</Label>
-                        <Input disabled type="email" name="recipient" placeholder="Email" value={chat.recipient}/>
-                    </InputDiv>
-                    <InputDiv>
-                        <Label>Title</Label>
-                        <Input disabled type="text" name="title" placeholder="Title" value={chat.title} />
-                    </InputDiv>
+                    // </InputDiv>
+                    // <InputDiv>
+                    //     <Label>To</Label>
+                    //     <Input disabled type="email" name="recipient" placeholder="Email" value={chat.recipient}/>
+                    // </InputDiv>
+                    // <InputDiv>
+                    //     <Label>Title</Label>
+                    //     <Input disabled type="text" name="title" placeholder="Title" value={chat.title} />
+                    // </InputDiv>
                     <InputDiv>
                         <Label>Body</Label>
                         <Textarea disabled value={chat.body} name="body"  placeholder="Your Body">
