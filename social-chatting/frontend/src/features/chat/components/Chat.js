@@ -23,15 +23,15 @@ export default function Chat({match}) {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json',
                 'Authorization': `JWT ${localStorage.getItem('access')}`,
-            }
-        }; 
-        axios.get(`${REACT_APP_API_URL}/api/chats/${match.params.id}/`,  config)
-        .then((response) => {
-            setChat(response.data)
-        }).catch(() => {
+    //         }
+    //     }; 
+    //     axios.get(`${REACT_APP_API_URL}/api/chats/${match.params.id}/`,  config)
+    //     .then((response) => {
+    //         setChat(response.data)
+    //     }).catch(() => {
 
-        })
-    }, [])
+    //     })
+    // }, [])
     
     
     
