@@ -108,33 +108,33 @@ const Label = styled.label`
     color: var(--secendory-text-color);
     font-size: 18px;
     width: 100%;
-    font-weight: 500;
-    letter-spacing: 1px;
-`
+//     font-weight: 500;
+//     letter-spacing: 1px;
+// `
 
-const Textarea = styled.textarea`
-    padding: 15px 16px;
-    border-radius: 4px;
-    background: var(--secendory-color);
-    border: none;
-    outline: none;
-    color: var(--secendory-text-color);
-    font-size: 18px;
-    width: 100%;
-    font-weight: 500;
-    letter-spacing: 1px;
-    margin: 0px;
-    height: 333px;
-    min-width: 100%;
+// const Textarea = styled.textarea`
+//     padding: 15px 16px;
+//     border-radius: 4px;
+//     background: var(--secendory-color);
+//     border: none;
+//     outline: none;
+//     color: var(--secendory-text-color);
+//     font-size: 18px;
+//     width: 100%;
+//     font-weight: 500;
+//     letter-spacing: 1px;
+//     margin: 0px;
+//     height: 333px;
+//     min-width: 100%;
 
-`
+// `
 
-const Button = styled.button`
+// const Button = styled.button`
     
-color: var(--primary-text-color);
-background: var(--primary-color);
-border: none;
-border-radius: 4px;
+// color: var(--primary-text-color);
+// background: var(--primary-color);
+// border: none;
+// border-radius: 4px;
 cursor: pointer;
 transition: all .4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 &:hover{
