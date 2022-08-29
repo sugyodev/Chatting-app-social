@@ -8,14 +8,14 @@ import { hideLoader, showLoader } from '../../../store'
 import alert from '../../../store/alert/actions'
 
 
-export default function Chat({match}) {
-    const [chat, setChat] = useState({
-        id: '',
-        user: '',
-        recipient: '',
-        title: '',
-        body: '',
-    })
+// export default function Chat({match}) {
+//     const [chat, setChat] = useState({
+//         id: '',
+//         user: '',
+//         recipient: '',
+//         title: '',
+//         body: '',
+//     })
 
     useEffect(() => {
         const config = {
@@ -23,15 +23,15 @@ export default function Chat({match}) {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json',
                 'Authorization': `JWT ${localStorage.getItem('access')}`,
-    //         }
-    //     }; 
-    //     axios.get(`${REACT_APP_API_URL}/api/chats/${match.params.id}/`,  config)
-    //     .then((response) => {
-    //         setChat(response.data)
-    //     }).catch(() => {
+            }
+        }; 
+        axios.get(`${REACT_APP_API_URL}/api/chats/${match.params.id}/`,  config)
+        .then((response) => {
+            setChat(response.data)
+        }).catch(() => {
 
-    //     })
-    // }, [])
+        })
+    }, [])
     
     
     
@@ -42,15 +42,15 @@ export default function Chat({match}) {
                     <InputDiv>
                         <Label>From</Label>
                         <Input disabled type="email" name="recipient" placeholder="Email" value={chat.user}/>
-                    // </InputDiv>
-                    // <InputDiv>
-                    //     <Label>To</Label>
-                    //     <Input disabled type="email" name="recipient" placeholder="Email" value={chat.recipient}/>
-                    // </InputDiv>
-                    // <InputDiv>
-                    //     <Label>Title</Label>
-                    //     <Input disabled type="text" name="title" placeholder="Title" value={chat.title} />
-                    // </InputDiv>
+                    </InputDiv>
+                    <InputDiv>
+                        <Label>To</Label>
+                        <Input disabled type="email" name="recipient" placeholder="Email" value={chat.recipient}/>
+                    </InputDiv>
+                    <InputDiv>
+                        <Label>Title</Label>
+                        <Input disabled type="text" name="title" placeholder="Title" value={chat.title} />
+                    </InputDiv>
                     <InputDiv>
                         <Label>Body</Label>
                         <Textarea disabled value={chat.body} name="body"  placeholder="Your Body">
