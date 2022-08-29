@@ -8,14 +8,14 @@ import { hideLoader, showLoader } from '../../../store'
 import alert from '../../../store/alert/actions'
 
 
-// export default function Chat({match}) {
-//     const [chat, setChat] = useState({
-//         id: '',
-//         user: '',
-//         recipient: '',
-//         title: '',
-//         body: '',
-//     })
+export default function Chat({match}) {
+    const [chat, setChat] = useState({
+        id: '',
+        user: '',
+        recipient: '',
+        title: '',
+        body: '',
+    })
 
     useEffect(() => {
         const config = {
@@ -68,26 +68,26 @@ import alert from '../../../store/alert/actions'
 
 
 
-const ComposeFormWrap = styled.div`
-        width: 95%;
-    margin: 30px 0px;
+// const ComposeFormWrap = styled.div`
+//         width: 95%;
+//     margin: 30px 0px;
 
-`
+// `
 
-const ComposeForm = styled.form`
+// const ComposeForm = styled.form`
 
 
-`
+// `
 
-const InputDiv = styled.div`
-    width: 100%;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: baseline;
-    align-items: center;
-`
+// const InputDiv = styled.div`
+//     width: 100%;
+//     margin-bottom: 20px;
+//     display: flex;
+//     justify-content: flex-start;
+//     flex-direction: column;
+//     align-items: baseline;
+//     align-items: center;
+// `
 
 
 const Input = styled.input`
