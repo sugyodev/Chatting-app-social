@@ -16,17 +16,17 @@ export default function Compose() {
         recipient: '',
         title: '',
         body: '',
-    })
-    const dispatch = useDispatch()
+    // })
+    // const dispatch = useDispatch()
 
-    const {recipient, title, body} = formData
+    // const {recipient, title, body} = formData
 
-    const changeFormData = e => setFormData({...formData, [e.target.name]: e.target.value})
+    // const changeFormData = e => setFormData({...formData, [e.target.name]: e.target.value})
 
-    const auth = useSelector(state => state.auth)
-    const sendMessage = e => {
-        e.preventDefault();
-        dispatch(showLoader());
+    // const auth = useSelector(state => state.auth)
+    // const sendMessage = e => {
+    //     e.preventDefault();
+    //     dispatch(showLoader());
 
         const config = {
             headers: {
