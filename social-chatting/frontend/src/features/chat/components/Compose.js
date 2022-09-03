@@ -16,42 +16,42 @@ export default function Compose() {
         recipient: '',
         title: '',
         body: '',
-    // })
-    // const dispatch = useDispatch()
+    })
+    const dispatch = useDispatch()
 
-    // const {recipient, title, body} = formData
+    const {recipient, title, body} = formData
 
-    // const changeFormData = e => setFormData({...formData, [e.target.name]: e.target.value})
+    const changeFormData = e => setFormData({...formData, [e.target.name]: e.target.value})
 
-    // const auth = useSelector(state => state.auth)
-    // const sendMessage = e => {
-    //     e.preventDefault();
-    //     dispatch(showLoader());
+    const auth = useSelector(state => state.auth)
+    const sendMessage = e => {
+        e.preventDefault();
+        dispatch(showLoader());
 
-        const config = {
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json',
-                'Authorization': `JWT ${localStorage.getItem('access')}`,
-            }
-        };
-        const user = auth.user.email;
-        const data = JSON.stringify({user, recipient, title, body});
-        axios.post(`${REACT_APP_API_URL}/api/chats/`, data, config)
-            .then((response) => {
-                dispatch(hideLoader())
-                dispatch(alert('Message Sent', 'success'));
-                setFormData({
-                    email: '',
-                    recipient: '',
-                    title: '',
-                    body: '',
-                })
-            }).catch(() => {
-            dispatch(hideLoader());
-            dispatch(alert('Failed to Send Message', 'danger'));
-        })
-    }
+    //     const config = {
+    //         headers: {
+    //             'Content-Type': 'application/json',
+    //             'Accept': 'application/json',
+    //             'Authorization': `JWT ${localStorage.getItem('access')}`,
+    //         }
+    //     };
+    //     const user = auth.user.email;
+    //     const data = JSON.stringify({user, recipient, title, body});
+    //     axios.post(`${REACT_APP_API_URL}/api/chats/`, data, config)
+    //         .then((response) => {
+    //             dispatch(hideLoader())
+    //             dispatch(alert('Message Sent', 'success'));
+    //             setFormData({
+    //                 email: '',
+    //                 recipient: '',
+    //                 title: '',
+    //                 body: '',
+    //             })
+    //         }).catch(() => {
+    //         dispatch(hideLoader());
+    //         dispatch(alert('Failed to Send Message', 'danger'));
+    //     })
+    // }
 
     return (
         <>
