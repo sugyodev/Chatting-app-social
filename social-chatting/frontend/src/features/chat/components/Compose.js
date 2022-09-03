@@ -67,26 +67,26 @@ export default function Compose() {
                         </Grid>
                         <Grid item xs={6}>
                             <TextField label="Email" placeholder="Email" name="recipient" variant="outlined"
-                                       onChange={changeFormData}
-                                       value={recipient}
-                                       fullWidth/>
-                        </Grid>
-                        <Grid item xs={12}>
-                            <TextField
-                                label="Your Body"
-                                multiline
-                                minRows={6}
-                                fullWidth
-                                onChange={changeFormData} value={body} name="body"
-                            />
-                        </Grid>
-                        <Grid item xs={12}>
-                            <Button type="submit" variant="contained" sx={{float: 'right'}}>Send</Button>
-                        </Grid>
-                    </Grid>
-                </ComposeForm>
-            </ComposeFormWrap>
-        </>
+        //                                onChange={changeFormData}
+        //                                value={recipient}
+        //                                fullWidth/>
+        //                 </Grid>
+        //                 <Grid item xs={12}>
+        //                     <TextField
+        //                         label="Your Body"
+        //                         multiline
+        //                         minRows={6}
+        //                         fullWidth
+        //                         onChange={changeFormData} value={body} name="body"
+        //                     />
+        //                 </Grid>
+        //                 <Grid item xs={12}>
+        //                     <Button type="submit" variant="contained" sx={{float: 'right'}}>Send</Button>
+        //                 </Grid>
+        //             </Grid>
+        //         </ComposeForm>
+        //     </ComposeFormWrap>
+        // </>
     )
 }
 
