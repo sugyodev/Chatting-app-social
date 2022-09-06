@@ -91,10 +91,10 @@ export default function Compose() {
 }
 
 
-// const ComposeFormWrap = styled.div`
-//     width: 95%;
-//     margin: 30px 0px;
-// `
+const ComposeFormWrap = styled.div`
+    width: 95%;
+    margin: 30px 0px;
+`
 
-// const ComposeForm = styled.form`
-// `
+const ComposeForm = styled.form`
+`
