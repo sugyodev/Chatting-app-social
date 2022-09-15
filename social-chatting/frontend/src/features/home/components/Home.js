@@ -23,9 +23,9 @@ export default function Home() {
         })
 
     }, [reload]);
-    // return (
-    //     <>
-    //         <Table tableData={tableData} />
-    //     </>
-    // )
+    return (
+        <>
+            <Table tableData={tableData} />
+        </>
+    )
 }
